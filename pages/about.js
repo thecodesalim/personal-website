@@ -16,7 +16,7 @@ export default function About() {
   };
   let css = isOpen ? "block" : "none";
   return (
-    <Layout bg="#000000">
+    <Layout bg="#111111">
       <div>
         <Button />
       </div>

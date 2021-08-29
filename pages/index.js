@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import Button from "../components/Button";
 import { motion } from "framer-motion";
 
-export default function About() {
+export default function Main() {
   return (
     <Layout bg="#111111">
       <div className="mainPart">
