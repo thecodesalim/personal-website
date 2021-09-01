@@ -113,6 +113,13 @@ working with Javascript(React, React Native, Nodejs, Svelte)"
             grid-row: 1;
           }
 
+          @media only screen and (max-width: 600px) {
+            .open-viewer {
+              display: flex;
+              flex-direction: column;
+            }
+          }
+
           a {
             margin-left: 20px;
             text-decoration: none;

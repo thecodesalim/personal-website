@@ -22,7 +22,7 @@ export default function Button(props) {
     close: { width: "10%" },
     open: {
       x: 0,
-      y: -40,
+      y: -5,
       width: "35%",
       height: "50%",
       transition: {
@@ -55,13 +55,6 @@ export default function Button(props) {
 
               .button:hover {
                 cursor: pointer;
-              }
-
-
-              @media screen and (max-width: 600px) {
-                .button {
-                  margin-right: 10%;
-                }
               }
 
               .buttonText {
