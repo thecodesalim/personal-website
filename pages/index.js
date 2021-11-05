@@ -1,71 +1,42 @@
-import Link from "next/link";
 import Layout from "../components/MyLayout.js";
 import Box from "../components/Box";
-import Header from "../components/Header";
-import Button from "../components/Button";
 import { motion } from "framer-motion";
 
 export default function Main() {
   return (
     <Layout bg="#111111">
-      <div className="mainPart">
-        <span className="name">Salim Abubakar</span>
-      </div>
-      <div className="bio">
-        <Box text="Software Engineer & Product Designer" width={20.5} />
-        <Box text="Keen in designing & building functional UIs" width={23} />
-      </div>
+      <header className="header">
+        <h1 className="name">SALIM ABUBAKAR</h1>
+      </header>
 
-      {/* <div className="link">
-        <Link href="https://github.com/thecodesalim">
-          <a>
-            <motion.div
-              whileHover={{ scale: 1.1, x: -20 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <Box text="Github" width={10} />
-            </motion.div>
-          </a>
-        </Link>
+      <section className="bio">
+        <motion.div
+          animate={{ x: 100, y: 100, opacity: 1 }}
+          transition={{
+            delay: 0.5,
+            x: { type: "spring", stiffness: 100 },
+            default: { duration: 2 },
+          }}
+        >
+          <Box text="Software Engineer & Product Designer" width={32.5} />
+          <Box text="Keen in designing & building functional UIs" width={34} />
+        </motion.div>
+      </section>
 
-        <Link href="https://twitter.com/TheCodeSalim">
-          <a>
-            <motion.div
-              whileHover={{ scale: 1.1, x: 20 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <Box text="Twitter" width={10} />
-            </motion.div>
-          </a>
-        </Link>
-      </div> */}
-      {/* <Header /> */}
-      <div className="open-viewer">
-        <Button
-          align="flex-end"
-          text="about"
-          value="I'm a graduate Software Engineer particularly interested in
-working with Javascript(React, React Native, Nodejs, Svelte)"
-        />
-        <Button
-          align="flex-end"
-          text="portfolio"
-          value="I'm a graduate Software Engineer particularly interested in
-working with Javascript(React, React Native, Nodejs, Svelte)"
-        />
-        <Button
-          align="flex-end"
-          text="twitter"
-          value="I'm a graduate Software Engineer particularly interested in
-working with Javascript(React, React Native, Nodejs, Svelte)"
-        />
-        <Button
-          align="flex-end"
-          text="github"
-          value="I'm a graduate Software Engineer particularly interested in
-working with Javascript(React, React Native, Nodejs, Svelte)"
-        />
-      </div>
+      <section className="open-viewer">
+        <motion.a
+          whileHover={{ scale: 1.2 }}
+          href="https://github.com/thecodesalim"
+        >
+          github
+        </motion.a>
+        <motion.a
+          whileHover={{ scale: 1.2 }}
+          href="https://twitter.com/TheCodeSalim/"
+        >
+          twitter
+        </motion.a>
+      </section>
 
       <style>
         {`
@@ -75,17 +46,16 @@ working with Javascript(React, React Native, Nodejs, Svelte)"
           align-self: flex-end
         }
           .open-viewer{
-            grid-row: 4; 
+            grid-row: 3; 
             display: flex;
             flex-direction: row;
-            grid-column: 1/5;
-            margin: 20px;
+            grid-column: 1/3;
           }
-          .mainPart {
+          .header {
             display: flex;
             flex-direction:  row;
             align-items: flex-end;
-            grid-row: 2;      
+            grid-row: 1;      
           }
           .linkHeader {
             font-style: italic;
@@ -93,6 +63,7 @@ working with Javascript(React, React Native, Nodejs, Svelte)"
 
           .name {
             font-weight: 400;
+            font-size: 18px;
             grid-row: 2;
             margin: 10px;
             margin-left: 20px;
@@ -100,8 +71,8 @@ working with Javascript(React, React Native, Nodejs, Svelte)"
 
           .bio {
             margin: 20px;
-            grid-row: 3;
-            grid-column: 1/6;
+            grid-row: 2;
+            grid-column: 1/3;
           }
 
           ul {
@@ -123,13 +94,10 @@ working with Javascript(React, React Native, Nodejs, Svelte)"
           a {
             margin-left: 20px;
             text-decoration: none;
-            color: white;
+            color: #e1ad01;
             display: inline-block;
             transition: transform 0.3s ease-out;
-          }
-
-          a:hover {
-            // transform: translate(3px, -5px);
+            text-decoration: underline;
           }
 
           .links {

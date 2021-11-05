@@ -1,4 +1,3 @@
-import Header from "./Header";
 import Meta from "./Meta";
 
 import { motion } from "framer-motion";
@@ -13,27 +12,26 @@ export default function Layout(props) {
         animate="visible"
         variants={{
           hidden: {
-            scale: 0.8,
-            opacity: 0,
+            scale: 0.5,
+            opacity: 0.8,
           },
           visible: {
             scale: 1,
             opacity: 1,
             transition: {
-              delay: 0.4,
+              delay: 0.05,
             },
           },
         }}
       >
         {props.children}
-        {/* <Header /> */}
         <style>
           {`
             :root {
               background-color: #111111;
             }
             body {
-              background: black;
+              background: ${props.bg};
               font-weight: 300;
             }
             .layoutStyle {
@@ -43,8 +41,8 @@ export default function Layout(props) {
               padding: 0;
               display: grid;
               height: 98vh;
-              grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr; 
-              grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
+              grid-template-rows: 1fr 1fr 1fr; 
+              grid-template-columns:  1fr 1fr 1fr;
               color: #D3D3D3;
             }
           `}

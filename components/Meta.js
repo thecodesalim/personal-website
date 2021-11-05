@@ -12,7 +12,7 @@ export default function Meta(props) {
 
       <style>
         {`
-         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
           html {
             background-color: #111111;
             color: #D3D3D3;
