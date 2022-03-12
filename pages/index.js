@@ -7,8 +7,8 @@ export default function Home() {
             <p className="text-xl text pb-10 font-medium">
               🚧 UNDERCONSTRUCTION, COMING BACK SOON 🚧
             </p>
-            <p className="text-xs text-slate-500">
-              ps my girl didn't like the last one
+            <p className="text-x text-slate-500">
+              ps my girl did not like the last one
             </p>
           </div>
         </div>
