@@ -6,11 +6,11 @@ export default function Home() {
           <p className="font-bold text-secondary mb-8">Salim Abubakar</p>
           <p className="text-secondary mb-10">Frontend engineer and designer</p>
           <div>
-            <p className="text-sm mb-6">Projects</p>
+            <p className="text-tertiary text-sm mb-6">Projects</p>
             <ul>
               <li>
-                <p className="text-secondary mb-4">Food Place</p>
-                <p className="text-tertiary">a community of food explorers, sharing our food adventures and helping each other find the next food spot.</p>
+                <p className="text-secondary mb-3">Food Place</p>
+                <p className="text-tertiary text-sm w-60">a community of food explorers, sharing our food adventures and helping each other find the next food spot.</p>
               </li>
             </ul>
           </div>
