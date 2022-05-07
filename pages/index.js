@@ -1,15 +1,15 @@
 export default function Home() {
   return (
-    <div className="flex pt-5 flex-col h-screen w-full bg-primary">
+    <div className="flex pt-5 flex-col h-screen w-full bg-primary text-secondary">
       <div className="flex grow pl-10 pr-10 flex-col">
         <div className="pt-24 self-center">
-          <p className="font-bold text-secondary">Salim Abubakar</p>
-          <p>Frontend engineer and designer</p>
+          <p className="font-bold text-secondary mb-8">Salim Abubakar</p>
+          <p className="text-secondary mb-10">Frontend engineer and designer</p>
           <div>
-            <p className="text-sm">Projects</p>
+            <p className="text-sm mb-6">Projects</p>
             <ul>
               <li>
-                <p className="text-secondary">Food Place</p>
+                <p className="text-secondary mb-4">Food Place</p>
                 <p className="text-tertiary">a community of food explorers, sharing our food adventures and helping each other find the next food spot.</p>
               </li>
             </ul>
