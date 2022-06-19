@@ -7,9 +7,13 @@ module.exports = {
     colors: {
       primary: "#232323",
       secondary: "#E5E5E5",
-      tertiary: "#858585"
+      tertiary: "#858585",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
