@@ -1,46 +1,36 @@
+import { useState } from "react";
 import Head from "next/head";
-import Item from "../components/Item";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <div className="flex pt-5 flex-col h-screen w-full bg-primary text-secondary font-inter">
+    <div className="flex flex-col p-2 h-screen w-full bg-primary text-secondary font-inter">
       <Head>
         <title>SALIM</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className="flex grow pl-10 pr-10 flex-col">
-        <div className="pt-24 self-center">
-          <h1 className="text-secondary mb-8">Salim Abubakar</h1>
-          <p className="text-secondary mb-3 font-light">
-            Frontend engineer and designer. Focused on crafting functional
-            interfaces.
+      <motion.div className=" m-10 ">
+        <div className=" w-9/12 bg-tertiary rounded-md p-2 md:w-4/12">
+          <p className=" text-secondary text-sm font-medium">
+            I’m Salim, <span className=" text-link">a front end engineer</span>{" "}
+            and
+            <span className=" text-link"> product designer</span> focused on
+            crafting functional interfaces.
           </p>
-          <p className="text-secondary mb-10 font-light">
-            Interested in Javascript and Python. Curious about Swift, Rust and
-            Data Science.
-          </p>
-          <div>
-            <p className="text-tertiary text-sm mb-6">Projects</p>
-            <ul>
-              <Item
-                link="https://food-place.vercel.app/"
-                name="Food Place"
-                detail="a community of food explorers, sharing our food adventures and helping
-        each other find the next food spot."
-              />
-              <Item
-                link="https://thecodesalim.itch.io/4th-wall"
-                name="4th Wall"
-                detail="an interactive narrative experience that explores the difficult subject of social media overuse."
-              />
-            </ul>
-          </div>
+          <ul className=" pt-6 text-link">
+            <li className=" text-sm ">
+              <a href="https://github.com/thecodesalim">projects</a>
+            </li>
+            <li className=" text-sm ">
+              <a href="https://www.figma.com/@thecodesalim">design</a>
+            </li>
+          </ul>
         </div>
-      </div>
-      <footer className="flex h-10 w-full bg-primary items-center pl-10 text-xs text-tertiary">
-        <p>Made in Abuja, 2022.</p>
-        <p className="pl-2">WIP.</p>
-      </footer>
+        <footer className="fixed left-10 bottom-0 text-xs text-link flex flex-row space-x-4">
+          <p>Made in Abuja, 2022. WIP 🚧</p>
+          <p>Reach me at hi[at]salim(dot)dev</p>
+        </footer>
+      </motion.div>
     </div>
   );
 }
