@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Head from "next/head";
 import { motion } from "framer-motion";
+import Button from "../components/Button";
 
 export default function Home() {
   return (
@@ -27,8 +28,8 @@ export default function Home() {
           </ul>
         </div>
         <footer className="fixed left-10 bottom-0 text-xs text-link flex flex-row space-x-4">
-          <p>Made in Abuja, 2022. WIP 🚧</p>
-          <p>Reach me at hi[at]salim(dot)dev</p>
+          <p>Made in Abuja, 2023. WIP 🚧</p>
+          <p>Reach me at hi[at]salim(dot)fyi</p>
         </footer>
       </motion.div>
     </div>
