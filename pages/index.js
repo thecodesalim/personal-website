@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Head from "next/head";
 import { motion } from "framer-motion";
-import Button from "../components/Button";
+import Link from "../components/Link";
+import Card from "../components/Card";
 
 export default function Home() {
   return (
@@ -16,20 +17,36 @@ export default function Home() {
             I’m Salim, <span className=" text-link">a front end engineer</span>{" "}
             and
             <span className=" text-link"> product designer</span> focused on
-            crafting functional interfaces.
+            crafting functional and polished interfaces.
           </p>
-          <ul className=" pt-6 text-link">
-            <li className=" text-sm ">
-              <a href="https://github.com/thecodesalim">projects</a>
-            </li>
-            <li className=" text-sm ">
-              <a href="https://www.figma.com/@thecodesalim">design</a>
-            </li>
-          </ul>
+          <div>
+            <ul className=" pt-6 text-link">
+              <Link title="Github" link="https://github.com/thecodesalim" />
+              <Link title="Figma" link="https://www.figma.com/@thecodesalim" />
+              <Link title="Layers" link="https://layers.to/salim" />
+            </ul>
+          </div>
+        </div>
+        <div className=" mt-8">
+          <p className=" text-sm font-medium">Projects</p>
+          <div>
+            <Card
+              link="https://food-place.vercel.app/"
+              title="Food Place"
+              description="
+            a place to share, explore and collect food"
+            />
+            <Card
+              link="https://thecodesalim.itch.io/4th-wall"
+              title="4th Wall"
+              description="an interactive game that discusses 
+social media overuse"
+            />
+          </div>
         </div>
         <footer className="fixed left-10 bottom-0 text-xs text-link flex flex-row space-x-4">
           <p>Made in Abuja, 2023. WIP 🚧</p>
-          <p>Reach me at hi[at]salim(dot)fyi</p>
+          <p>Reach me at hi[at]salim(dot)work</p>
         </footer>
       </motion.div>
     </div>
