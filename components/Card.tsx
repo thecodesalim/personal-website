@@ -9,7 +9,7 @@ export default function Card({
 }) {
   return (
     <a href={`${link}`}>
-      <div className=" w-1/4 hover:bg-tertiary p-2 space-y-1 rounded">
+      <div className=" w-2/3 hover:bg-tertiary p-2 space-y-1 rounded sm:w-1/4">
         <p className=" text-sm">{title}</p>
         <p className=" text-sm text-link">{description}</p>
       </div>

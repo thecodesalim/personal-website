@@ -10,7 +10,7 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <div className=" ml-1 space-y-3 sm:ml-10">
-        <div className=" w-2/4 p-2 space-y-3 sm:w-2/3">
+        <div className=" w-3/4 p-2 space-y-3 sm:w-2/4">
           <p className=" font-semibold text-sm text-secondary">
             Salim Abubakar
           </p>
@@ -42,7 +42,7 @@ export default function Home() {
             title="Layers"
             description="throughtfully designed interfaces"
           />
-          <div className="w-2/4 p-2 sm:w-2/3">
+          <div className="w-2/3 p-2 sm:w-2/4">
             <p className="p-2">More</p>
             <p className=" text-link p-2 text-sm">
               You can see more of my work on Twitter or more of my code on
